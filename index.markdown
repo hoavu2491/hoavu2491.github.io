@@ -4,5 +4,3 @@
 
 layout: home
 ---
-
-Bạn có muốn tôi làm gì không
