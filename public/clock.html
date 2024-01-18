@@ -27,7 +27,7 @@
 
         document.getElementById("digitalClock").innerText = "Loading...";
         document.getElementById("digitalClock").innerText = new Date().toString();
-        setTimeout(function(){
+        setInterval(function(){
           document.getElementById("digitalClock").innerText = new Date().toString();
         }, 10000);
       }
