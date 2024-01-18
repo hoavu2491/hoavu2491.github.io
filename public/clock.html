@@ -18,9 +18,16 @@
     </style>
   </head>
   <body>
-    <h1>Digital Clock</h1>
+    <p id="browserInfo">Loading...</p>
+    <h4>Digital Clock</h4>
     <div id="digitalClock"></div>
     <script>
+      function displayBrowserInfo() {
+        const browserInfo = `Browser: ${navigator.appName} ${navigator.appVersion}`;
+        document.getElementById("browserInfo").innerText = browserInfo;
+      }
+
+      displayBrowserInfo();
       function updateClock() {
         const now = new Date();
         const hours = now.getHours().toString().padStart(2, "0");
